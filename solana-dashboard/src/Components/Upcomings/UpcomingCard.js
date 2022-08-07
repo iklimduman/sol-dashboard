@@ -1,10 +1,11 @@
 import React from "react";
-import styled from "styled-components"
+import styled from "styled-components" ;
+import { UpcomingNFTs } from "../../DummyData/DummyData"; 
 
 const CardWrapper = styled.div`
-    width : 10vw ; 
-    height: 20vh;
-    background-color : green ;
+    width : 15vw ; 
+    height: 30vh;
+    background-image: url(${props => props.backgroundImage});
     display : flex ;
     flex-direction: column ;
     align-items: center ;
@@ -12,12 +13,13 @@ const CardWrapper = styled.div`
 
 `
 
-const UpcomingCard = () => {
+const UpcomingCard = (props) => {
+    console.log(props.backgroundImage)
     return (
-        <CardWrapper>
-            <span>Sol Price</span>
-            <span>Supply</span>
-            <span>Timer</span>
+        <CardWrapper background={props.backgroundImage}>
+            <span>{props.solPrice}</span>
+            <span>{props.supply}</span>
+            <span>{props.releaseDate}</span>
         </CardWrapper>
     )
 }
