@@ -16,6 +16,7 @@ const Top = styled(Main)`
     width : 90vw ;
     //height: 70px ;
     margin : auto ;
+    margin-bottom: 3vh;
 `
 
 const WideFlex = styled(Main)`
