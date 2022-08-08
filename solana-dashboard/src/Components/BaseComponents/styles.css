@@ -1,0 +1,16 @@
+.rec.rec-arrow{
+    background-color : transparent !important;
+}
+
+button.rec-dot{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.rec-arrow {
+    color: #4D4AE8 !important;
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}

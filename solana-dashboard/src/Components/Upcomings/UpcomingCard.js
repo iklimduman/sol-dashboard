@@ -31,6 +31,12 @@ const InfoContainer = styled.div`
     color : #DBD8E3 ;
 `
 
+const InfoText = styled.span`
+    margin-bottom : 4px;
+    font-family: 'Cabin', sans-serif;
+    font-size : 16px ;
+`
+
 const UpcomingCard = (props) => {
 
     const CountDownConstant = (new Date(props.releaseDate).getTime() - Date.now()) / 1000 ;
@@ -40,11 +46,10 @@ const UpcomingCard = (props) => {
             <NFTImage image={props.backgroundImage} />
             <InfoContainer>
                 <span style={{ marginRight: "auto", fontFamily: "'Cabin', sans-serif", fontSize : "22px", marginBottom : "8px" }}>{props.title}</span>
-                <span style={{marginBottom : "4px",fontFamily: "'Cabin', sans-serif", fontSize : "18px",}}>Price : {props.solPrice} SOL</span>
-                <span style={{marginBottom : "4px"}}>Supply : {props.supply}</span>
-                <div style={{marginBottom : "4px"}}>Release in <Countdown countDownTo={CountDownConstant}/></div>
+                <InfoText>Price : {props.solPrice} SOL</InfoText>
+                <InfoText>Supply : {props.supply}</InfoText>
+                <InfoText>Release in <Countdown countDownTo={CountDownConstant}/></InfoText>
             </InfoContainer>
-
         </CardWrapper>
     )
 }

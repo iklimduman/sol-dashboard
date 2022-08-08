@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from 'react-elastic-carousel';
+import "./styles.css" ;
 
 const CustomCarousel = ({
     CustomCarouselItem: CarouselItem,
@@ -8,7 +9,6 @@ const CustomCarousel = ({
 
     return (
         <div>
-
             <Carousel breakPoints={breakPoints}>
                 {ItemArr.map(item => <CarouselItem
                     solPrice={item.solPrice}
@@ -18,7 +18,6 @@ const CustomCarousel = ({
                     title={item.name}
                 ></CarouselItem>)}
             </Carousel>
-
         </div>
 
     );
