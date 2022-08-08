@@ -7,7 +7,7 @@ const CustomCarousel = ({
     ItemsToMap: ItemArr }) => {
 
     return (
-        <div style={{ backgroundColor: "rgb(77,74,232,0.05)" }}>
+        <div>
 
             <Carousel breakPoints={breakPoints}>
                 {ItemArr.map(item => <CarouselItem
@@ -15,7 +15,8 @@ const CustomCarousel = ({
                     supply={item.supply}
                     releaseDate={item.releaseDate.toDateString()}
                     backgroundImage={item.image}
-                >{item.title}</CarouselItem>)}
+                    title={item.name}
+                ></CarouselItem>)}
             </Carousel>
 
         </div>

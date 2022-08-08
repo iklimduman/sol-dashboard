@@ -11,23 +11,10 @@ const Upcomings = () => {
         { width: 1200, itemsToShow: 5 },
     ]
 
-    const items = [
-        { id: 1, title: 'item #1' },
-        { id: 2, title: 'item #2' },
-        { id: 3, title: 'item #3' },
-        { id: 4, title: 'item #4' },
-        { id: 5, title: 'item #5' },
-        { id: 1, title: 'item #1' },
-        { id: 2, title: 'item #2' },
-        { id: 3, title: 'item #3' },
-        { id: 4, title: 'item #4' },
-        { id: 5, title: 'item #5' }
-    ]
-
     return (
         <div>
-            <h1 style={{color : "#CECECE"}}>UPCOMINGS</h1>
-            <CustomCarousel 
+            <div style={{ color: "#CECECE", fontFamily: " 'Raleway', sans-serif", width: "90vw", margin: "auto", fontSize: "26px", marginBottom : "8px" }}>UPCOMINGS</div>
+            <CustomCarousel
                 CustomCarouselItem={UpcomingCard}
                 CustomBreakPoints={breakPoints}
                 ItemsToMap={UpcomingNFTs}
