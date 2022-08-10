@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 
 const Countdown = (props) => {
 
-    console.log(props.countDownTo)
-
     const [counter,setCounter] = useState(props.countDownTo) ;
 
     useEffect(() => {

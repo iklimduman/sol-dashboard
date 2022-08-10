@@ -13,7 +13,7 @@ const Upcomings = () => {
 
     return (
         <div>
-            <div style={{ color: "#CECECE", fontFamily: " 'Raleway', sans-serif", width: "90vw", margin: "auto", fontSize: "26px", marginBottom : "8px" }}>UPCOMINGS</div>
+            <div style={{ color: "#CECECE", fontFamily: " 'Raleway', sans-serif", width: "90vw", margin: "auto", fontSize: "26px", marginBottom : "8px", fontWeight : "500" }}>UPCOMINGS</div>
             <CustomCarousel
                 CustomCarouselItem={UpcomingCard}
                 CustomBreakPoints={breakPoints}
